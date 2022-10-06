@@ -1,7 +1,18 @@
 package com.jsa.apiserver.controller;
 
-import org.springframework.stereotype.Controller;
+import com.jsa.apiserver.model.dto.MemberDto;
+import com.jsa.apiserver.model.dto.RequestMemberDto;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@Component
+@RestController
 public class MemberControllerTest {
+    @GetMapping("/member")
+    public boolean isMemberLogin(@RequestBody RequestMemberDto _memberInfo) {
+
+        return false;
+    }
 }
