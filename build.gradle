@@ -35,6 +35,10 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
     testImplementation 'org.testcontainers:junit-jupiter'
+
+    // https://mvnrepository.com/artifact/org.mybatis/mybatis
+    implementation 'org.mybatis:mybatis:3.5.11'
+
 }
 
 dependencyManagement {
